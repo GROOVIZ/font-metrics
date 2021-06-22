@@ -1,10 +1,13 @@
 {
-  "name": "font-metrics",
-  "version": "1.0.0",
+  "name": "@grooviz/font-metrics",
+  "version": "0.0.1",
   "description": "Calculate Font Metrics using HTML Canvas",
   "author": "GROOVIZ",
   "license": "MIT",
-  "repository": "GROOVIZ/font-metrics",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GROOVIZ/font-metrics.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -47,5 +50,12 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "tslib": "^2.0.1",
     "typescript": "^3.2.4"
+  },
+  "bugs": {
+    "url": "https://github.com/GROOVIZ/font-metrics/issues"
+  },
+  "homepage": "https://github.com/GROOVIZ/font-metrics#readme",
+  "directories": {
+    "example": "example"
   }
 }
