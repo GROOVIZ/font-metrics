@@ -16,7 +16,7 @@ import { getCacheHash } from "../utils";
  */
 
 const useFontMetrics = (font: string, options: FontMetricsOptions = {}) => {
-  if (typeof document === 'undefined') return [defaultFontMetrics]
+  if (typeof document === "undefined") return [defaultFontMetrics];
 
   options = Object.assign(defaultFontMetricsOptions, options);
   const padding = options.fontSize! * 0.5;
@@ -33,10 +33,6 @@ const useFontMetrics = (font: string, options: FontMetricsOptions = {}) => {
   const setFont = () => {
     canvas.width = options.fontSize! * 2;
     canvas.height = options.fontSize! * 2 + padding;
-    console.log(
-      "ctx.font = ",
-      `${options.fontStyle} ${options.fontWeight} ${options.fontSize}px ${font}`
-    );
     ctx.font = `${options.fontStyle} ${options.fontWeight} ${options.fontSize}px ${font}`;
     ctx.textBaseline = "top";
     ctx.textAlign = "center";

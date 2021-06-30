@@ -39,7 +39,6 @@ export default function Home() {
           <MetricsParametersForm
             params={metricsParameters}
             onParamsChange={(x: MetricsParameters) => {
-              console.log("PARAM: ", x);
               setMetricsParameters(x);
             }}
           />
