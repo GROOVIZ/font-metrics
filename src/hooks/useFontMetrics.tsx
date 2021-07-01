@@ -137,12 +137,12 @@ const useFontMetrics = (font: string, options: FontMetricsOptions = {}) => {
     const canvasLineHeight = computeCanvasLineHeight();
     const offsets: FontOffsets = {
       top: 0,
-      ascent: measureTop(options.ascent!),
-      tittle: measureTop(options.tittle!),
-      upper: measureTop(options.capHeight!),
-      lower: measureTop(options.xHeight!),
-      baseline: measureBottom(options.baseline!),
-      descent: measureBottom(options.descent!),
+      ascent: measureTop(options.ascent!) + 1,
+      tittle: measureTop(options.tittle!) + 1,
+      upper: measureTop(options.capHeight!) + 1,
+      lower: measureTop(options.xHeight!) + 1,
+      baseline: measureBottom(options.baseline!) + 1,
+      descent: measureBottom(options.descent!) + 1,
       bottom: canvasLineHeight,
     };
     const heights: FontHeights = {
