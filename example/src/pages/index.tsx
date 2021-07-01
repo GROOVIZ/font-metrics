@@ -25,7 +25,7 @@ export default function Home() {
   );
   return (
     <>
-      <h1>Font Metrics Hook</h1>
+      <h1>Font Metrics Hook Hahaha</h1>
       <h2>Calculate Fonts Metrics using HTML Canvas</h2>
       <p>This React Package is brought to you by the GROOVIZ Team!</p>
       <div

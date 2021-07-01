@@ -110,6 +110,7 @@ const useFontMetrics = (font: string, options: FontMetricsOptions = {}) => {
     fontSize: number,
     origin: string
   ): FontMetrics => {
+    console.log("MMETRICS: ", metrics);
     const result: FontMetrics = {
       fontSize: metrics.fontSize,
       heights: Object.assign({}, metrics.heights),
@@ -127,6 +128,7 @@ const useFontMetrics = (font: string, options: FontMetricsOptions = {}) => {
     for (let key in metrics.offsets) {
       result.offsets[key as keyof FontOffsets] -= offset;
     }
+    console.log("NNEW MMETRICS: ", result);
     return result;
   };
 
