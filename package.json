@@ -1,6 +1,6 @@
 {
   "name": "@grooviz/font-metrics",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Calculate Font Metrics using HTML Canvas",
   "author": "GROOVIZ",
   "license": "MIT",
